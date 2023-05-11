@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmad's Calculator</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="section-one" id="section-one">
+        <h1>Hello, Welcome</h1>
+
+        <p>Techmad's G.P calculator helps you to calculate your G.p, and also tells you the
+            grade you're on currently, </p>
+
+        <p>Click on the button below to start</p>
+
+        <button id="section-one-button">let's go there</button>
+    </section>
+
+    <section class="section-two" id="section-two">
+        <form id="formInfo">
+            <label for="name"> What's your name<br></label>
+            <input type="text" id="myName" name="name" required><br>
+
+            <label for="name"> What's your department<br></label>
+            <input type="text" id="myDept" name="department" required><br>
+            <button type="submit" id="section-two-button">Submit</button>
+        </form>
+        <button id="section-two-go-back-button">Go back</button>
+    </section>
+
+    <section class="section-three" id="section-three">
+        <h2 id="greeting"></h2>
+        <p>G.P: <span id="gp"></span></p>
+
+        <div id="course-forms">
+            <div id="course-form-template">
+                <form id="courseForm">
+                    <select id="unitLoad" name="unitLoad">
+                        <option value=" " disabled selected>Select unit load</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <select id="grade" name="grade">
+                        <option value=" " disabled selected>Select grade</option>
+                        <option value="5">A</option>
+                        <option value="4">B</option>
+                        <option value="3">C</option>
+                        <option value="2">D</option>
+                        <option value="1">E</option>
+                        <option value="0">F</option>
+                    </select>
+
+                    <button type="button" id="delete-btn">X</button>
+                </form>
+            </div>
+        </div>
+        
+        <button id="addCoursebtn">Add Course</button>
+        <p>Total Score: <span id="totalScore"></span></p>
+        <p>Total Unit Load: <span id="totalunitLoad"></span></p>
+
+        <button id="generateBtn">Generate</button>
+        <button id="show-help">Show help</button>
+        <button id="section-three-go-back-button">Go back</button>
+        <p id="gradeRemark"></p>
+        <p>Built by techmad.x</p>
+    </section>
+
+    <section class="section-four" id="section-four">
+        <p>Select the unit or credit load of the course from the drop down menu, and also do likewise for the grade.</p>
+
+        <p> Use the "Add Course" button to add more fields.</p>
+       
+        <p>Use the "X" button to delete a field.
+        </p>
+        
+        <p>Click on "Generate" button to generate your grade point.</p>
+
+        <p>All the best comrade!</p>
+        
+        <button id="close-help">Close</button>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

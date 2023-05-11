@@ -1,0 +1,10 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.section-two, .section-three, .section-four {
+    display: none;
+}
